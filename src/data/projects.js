@@ -1,5 +1,6 @@
 const projects = [
   {
+    id: 0,
     title: 'Motor Part Picker',
     source: '#',
     description:
@@ -15,6 +16,16 @@ const projects = [
     ],
     otherTech: ['Redux', 'Firebase DB'],
   },
+  {
+    id: 1,
+    title: 'Test Project',
+    source: '#',
+    description: 'A test project description.',
+    imageSrc: '',
+    role: 'Test role',
+    tech: [],
+    otherTech: ['Test tech1']
+  }
 ];
 
 export default projects;

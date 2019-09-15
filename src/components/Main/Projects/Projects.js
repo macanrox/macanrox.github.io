@@ -7,42 +7,44 @@ import {
   CardSubtitle,
   CardBody } from 'reactstrap';
 import './Projects.css';
-import projects from '../../data/projects';
+// import projects from '../../../data/projects';
 
 class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      proj: JSON.parse(JSON.stringify(projects)),
-    };
+      title: props.title,
+      source: props.source,
+      description: props.description,
+      imgSrc: props.imgSrc,
+      role: props.role,
+      tech: props.tech,
+      otherTech: props.otherTech
+    }
   }
 
   render() {
-    const project = this.state.proj;
-    console.log(project[0].imageSrc);
-
+    const project = this.state;
+    console.log(project.tech)
     return (
       <Card>
-        <CardImg top width="100%" src={project.imageSrc} alt="Card image cap" />
+        {/* <CardImg top width="100%" src={project.imageSrc} alt="Card image cap" /> */}
+        <CardImg top width="100%" src={project.imgSrc} alt="Card image cap" />
         <CardBody>
-          <CardTitle id="project-link"><a href={'source'}>{'title'}</a></CardTitle>
+          <CardTitle id="project-link"><a href={project.source}>{project.title}</a></CardTitle>
           <CardSubtitle className="text-muted">{project.role}</CardSubtitle>
           <CardText>
             {project.description}
             <br />
             <br />
             <span className="tech-dev-icons">
-              <span className="text-muted">built with {' '}</span>
+              <span className="text-muted">built with</span>
               <br />
               <span id="dev-icons">
-                { project.map((e) => e.tech.map((techs) => <span className={`devicon-${techs}`} />)) }
+                { project.tech }
               </span>
               <span id="no-dev-icons">
-              {/* {project.map((e) => {
-                return {e.otherTech.map((otherTechs) => {
-                  return <span>{`${otherTechs}`}</span>;
-                }).join(', ')}
-              })} */}
+              {project.otherTech}
               </span>
             </span>
           </CardText>
