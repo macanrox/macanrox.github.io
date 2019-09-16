@@ -12,6 +12,20 @@ class Main extends Component {
     }
   }
 
+  renderProject(project) {
+    return project.map((item, index) => (
+      <Projects 
+        key={index.id} 
+        title={item.title}
+        source={item.source}
+        description={item.description}
+        imgSrc={item.imageSrc}
+        role={item.role}
+        tech={item.tech.map((e) => <span className={`devicon-${e}`}></span>)}
+        otherTech={item.otherTech.map((e) => <span>{`${e} `}</span>)}
+        />))
+  }
+
   render() {
     const project = this.state.proj;
 
@@ -21,17 +35,7 @@ class Main extends Component {
           <h2><a href="#works">Works</a><hr /></h2>
         </div>
         <div className="project-group">
-          {project.map((item, index) => (
-            <Projects 
-              key={index.id} 
-              title={item.title}
-              source={item.source}
-              description={item.description}
-              imgSrc={item.imageSrc}
-              role={item.role}
-              tech={item.tech.map((e) => <span className={`devicon-${e}`}></span>)}
-              otherTech={item.otherTech.map((e) => <span>{`${e}`}</span>)}
-              />))}
+          {this.renderProject(project)}
         </div>
         <div className="contact">
           <h2><a href="#contact">Contact Me</a><hr /></h2>

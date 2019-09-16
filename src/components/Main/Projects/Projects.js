@@ -7,7 +7,6 @@ import {
   CardSubtitle,
   CardBody } from 'reactstrap';
 import './Projects.css';
-// import projects from '../../../data/projects';
 
 class Projects extends Component {
   constructor(props) {
@@ -25,7 +24,7 @@ class Projects extends Component {
 
   render() {
     const project = this.state;
-    console.log(project.tech)
+    console.log(project.tech);
     return (
       <Card>
         {/* <CardImg top width="100%" src={project.imageSrc} alt="Card image cap" /> */}
@@ -52,6 +51,7 @@ class Projects extends Component {
       </Card>
     );
   }
-}
+
+}//end of class Projects
 
 export default Projects;
