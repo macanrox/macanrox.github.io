@@ -19,7 +19,7 @@ class Main extends Component {
         title={item.title}
         source={item.source}
         description={item.description}
-        imgSrc={item.imageSrc}
+        image={item.image}
         role={item.role}
         tech={item.tech.map((e) => <span className={`devicon-${e}`}></span>)}
         otherTech={item.otherTech.map((e) => <span>{`${e} `}</span>)}
@@ -35,7 +35,9 @@ class Main extends Component {
           <h2><a href="#works">Works</a><hr /></h2>
         </div>
         <div className="project-group">
-          {this.renderProject(project)}
+          <div className="row">
+            {this.renderProject(project)}
+          </div>
         </div>
         <div className="contact">
           <h2><a href="#contact">Contact Me</a><hr /></h2>

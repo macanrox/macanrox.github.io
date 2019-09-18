@@ -15,7 +15,7 @@ class Projects extends Component {
       title: props.title,
       source: props.source,
       description: props.description,
-      imgSrc: props.imgSrc,
+      image: props.image,
       role: props.role,
       tech: props.tech,
       otherTech: props.otherTech
@@ -24,11 +24,11 @@ class Projects extends Component {
 
   render() {
     const project = this.state;
-    console.log(project.tech);
+    console.log(project.image);
+
     return (
-      <Card>
-        {/* <CardImg top width="100%" src={project.imageSrc} alt="Card image cap" /> */}
-        <CardImg top width="100%" src={project.imgSrc} alt="Card image cap" />
+      <Card className="col-6 col-md-4 col-lg-3 mb-4">
+        <CardImg top width="100%" src={project.image} alt="" />
         <CardBody>
           <CardTitle id="project-link"><a href={project.source}>{project.title}</a></CardTitle>
           <CardSubtitle className="text-muted">{project.role}</CardSubtitle>
@@ -40,8 +40,9 @@ class Projects extends Component {
               <span className="text-muted">built with</span>
               <br />
               <span id="dev-icons">
-                { project.tech }
+                {project.tech}
               </span>
+              &nbsp;
               <span id="no-dev-icons">
               {project.otherTech}
               </span>
