@@ -1,11 +1,36 @@
-label, button {
+label {
 	float: left;
 }
 
-.contact-description {
-	margin-bottom: 1.5rem;
+.form-box {
+	background-color: white;
+	padding: 3rem;
+	border-radius: 0.25rem;
+	border: 1px solid rgba(0, 0, 0, 0.125)
 }
 
-.form-box {
-	border: 1px black solid;
+.contact-description {
+	/* border: 1px blue solid; */
+	margin-bottom: 1.5rem;
+	text-align: left;
 }
+
+/* .textbox-row input {
+	outline: 0;
+	border-width: 0 0 2px;
+	border-color: blue;
+}
+
+.textbox-row input:focus {
+	border-color: green;
+} */
+
+.button-icon {
+	vertical-align: -0.3rem;
+	font-size: 22px;
+	margin-right: 0.7rem;
+}
+
+/* button {
+	box-shadow: 1rem;
+} */

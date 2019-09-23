@@ -33,14 +33,14 @@ class Main extends Component {
       <div className="site-content">
         <div className="works">
           <h2><a href="#works">Works</a><hr /></h2>
-        </div>
-        <div className="project-group">
-          <div className="row">
-            {this.renderProject(project)}
+          <div className="project-group">
+            <div className="row">
+              {this.renderProject(project)}
+            </div>
           </div>
         </div>
-        <div className="contact">
-          <h2><a href="#contact">Contact Me</a><hr /></h2>
+        <div className="contact-header">
+          <h2 id="contact-me"><a href="#contact">Contact Me</a><hr /></h2>
           <Contact />
         </div>
       </div>

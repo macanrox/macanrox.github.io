@@ -44,7 +44,7 @@
 /* centers the cards on smaller screens */
 /*@media screen and (min-width: 1440px) {
 	.card {
-		width: 30%
+		width: 30%:
 		margin: auto;
 		padding: 10px;
 	}

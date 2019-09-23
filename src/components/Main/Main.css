@@ -9,7 +9,11 @@ hr {
 	border-width: 1px !important;
 }
 
-.works > h2 > a, .contact > h2 > a {
+/* .site-content > div:nth-child(odd) {
+	background-color: #F0F0F0;
+} */
+
+.works > h2 > a, .contact-header > h2 > a {
 	color: inherit;
 	pointer-events: none;
 }
@@ -19,7 +23,7 @@ hr {
   padding: 3rem 5rem;
 }
 
-.works, .contact {
+.works, .contact-header {
 	text-align: center;
 }
 
@@ -33,24 +37,25 @@ hr {
 }
 
 .project-group {
+	text-align: left;
 	padding-bottom: 5rem;
 }
 
-.contact {
+.contact-header {
 	width: 40%;
 	margin: auto;
 }
 
 /* centers the cards on smaller screens */
 @media screen and (max-width: 1024px) {
-	.contact {
+	.contact-header {
 		width: 60%;
 		margin: auto;
 	}
 }
 
 @media screen and (max-width: 768px) {
-	.contact {
+	.contact-header {
 		width: 100%;
 	}
 }
