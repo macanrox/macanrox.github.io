@@ -15,26 +15,6 @@ const projects = [
       'nodejs-plain colored',
     ],
     otherTech: ['Redux', 'Firebase'],
-  },
-  {
-    id: 1,
-    title: 'Test Project',
-    source: '#',
-    description: 'A test project description.',
-    image: 'images/default-image.png',
-    role: 'Test role',
-    tech: [],
-    otherTech: ['Test tech1']
-  },
-  {
-    id: 2,
-    title: 'Test Project',
-    source: '#',
-    description: 'A test project description.',
-    image: 'images/default-image.png',
-    role: 'Test role',
-    tech: [],
-    otherTech: ['Test tech2']
   }
 ];
 

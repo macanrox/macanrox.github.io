@@ -23,7 +23,9 @@ class Main extends Component {
         role={item.role}
         tech={item.tech.map((e) => <span className={`devicon-${e}`}></span>)}
         otherTech={item.otherTech.map((e) => <span>{`${e} `}</span>)}
-        />))
+        />
+      )
+    )
   }
 
   render() {

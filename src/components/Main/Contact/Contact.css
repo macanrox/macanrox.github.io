@@ -15,22 +15,13 @@ label {
 	text-align: left;
 }
 
-/* .textbox-row input {
+.textbox-row input {
 	outline: 0;
 	border-width: 0 0 2px;
-	border-color: blue;
 }
-
-.textbox-row input:focus {
-	border-color: green;
-} */
 
 .button-icon {
 	vertical-align: -0.3rem;
 	font-size: 22px;
 	margin-right: 0.7rem;
 }
-
-/* button {
-	box-shadow: 1rem;
-} */

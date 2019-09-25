@@ -19,10 +19,6 @@ export default function Contact () {
         get back to you as soon as I can. Please allow a couple of days for me to respond. Thank you!
       </FormText>
       <FormGroup className="contact-info">
-        <Row className="text-row">
-          <Col><Label for="contact-form-name">Name</Label></Col>
-          <Col><Label for="contact-form-email">Email</Label></Col>
-        </Row>
         <Row className="textbox-row">
           <Col><Input type="text" name="name" id="contact-name" required="required" placeholder="Name" /></Col>
           <Col><Input type="email" name="email" required="required" id="contact-email" placeholder="Email" /></Col>
