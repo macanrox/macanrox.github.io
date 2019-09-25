@@ -1,0 +1,27 @@
+label {
+	float: left;
+}
+
+.form-box {
+	background-color: white;
+	padding: 3rem;
+	border-radius: 0.25rem;
+	border: 1px solid rgba(0, 0, 0, 0.125)
+}
+
+.contact-description {
+	/* border: 1px blue solid; */
+	margin-bottom: 1.5rem;
+	text-align: left;
+}
+
+.textbox-row input {
+	outline: 0;
+	border-width: 0 0 2px;
+}
+
+.button-icon {
+	vertical-align: -0.3rem;
+	font-size: 22px;
+	margin-right: 0.7rem;
+}

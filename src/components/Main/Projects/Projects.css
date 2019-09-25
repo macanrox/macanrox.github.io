@@ -5,14 +5,13 @@
 	padding: 10px;
 }
 
-/* img.card-img-top {
-	display: none;
-	visibility: hidden;
-} */
-
 .card-title {
 	text-transform: uppercase;
 	font-weight: bold;
+}
+
+#project-link {
+	margin-bottom: 0.2rem;
 }
 
 .card-subtitle {
@@ -21,11 +20,11 @@
 }
 
 #dev-icons {
-	font-size: 2rem;
+	font-size: 1.4rem;
 }
 
 #no-dev-icons {
-	font-size: 1rem;
+	font-size: 0.8rem;
 }
 
 #project-link > a {
@@ -40,7 +39,7 @@
 /* centers the cards on smaller screens */
 /*@media screen and (min-width: 1440px) {
 	.card {
-		width: 30%
+		width: 30%:
 		margin: auto;
 		padding: 10px;
 	}

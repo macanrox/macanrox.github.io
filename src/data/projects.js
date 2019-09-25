@@ -1,20 +1,21 @@
 const projects = [
   {
+    id: 0,
     title: 'Motor Part Picker',
     source: '#',
     description:
-      'A website that helps users build a motorbike by choosing various parts and also view community builds for inspiration.',
-    imageSrc: '../../images/mpp.jpg',
+      'A website to find the best deal on motorcycle parts as well as sharing motorcycle builds with the community.',
+    image: 'images/mpp.jpg',
     role: 'Junior Developer',
     tech: [
       'javascript-plain colored',
       'react-original-wordmark colored',
       'css3-plain-wordmark colored',
       'sass-original colored',
-      'github-plain-wordmark colored',
+      'nodejs-plain colored',
     ],
-    otherTech: ['Redux', 'Firebase DB'],
-  },
+    otherTech: ['Redux', 'Firebase'],
+  }
 ];
 
 export default projects;
